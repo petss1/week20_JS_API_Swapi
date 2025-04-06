@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <title>API Star Wars</title>
+</head>
+<body>
+    <form class="container">
+    <h1>Звездные войны:</h1>
+    <label for="attributes">Выберите сущность:</label>
+    <select id="attributes">
+        <option value="people">Персонажи</option>
+        <option value="films">Фильмы</option>
+        <option value="starships">Корабли</option>
+    </select>
+    <label for="id">Введите идентификатор (от 1 до 10):</label>
+    <input type="number" id="id" min="1" max="10" required/>
+    <button id="getData" type="button">Получить данные</button>
+    <div id="loading">Идёт загрузка...</div>
+    <div id="result"></div>
+    <div id="error"></div>
+    </form>
+    <script src="assets/script/index.js"></script>
+</body>
+</html>
